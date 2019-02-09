@@ -1,3 +1,5 @@
+ 
+
 public class LoopFun
 {
 
@@ -7,8 +9,8 @@ public class LoopFun
        * @param number
        * @return the factorial of the number
        */
-      public int factorial(int number){
-          return -1;
+      public Integer factorial(Integer number){
+          return null;
       }
 
       /**

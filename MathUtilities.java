@@ -1,22 +1,25 @@
+ 
+
 public class MathUtilities{
+    
   /**
    * Add two number together
-   * @param num1 first number
-   * @param num2 second number
+   * @param baseValue first number
+   * @param valueToAdd number
    * @return the sum of the two numbers
    */
-  public int add(int num1, int num2){
-      return -1;
+  public Integer add(Integer baseValue, Integer valueToAdd){
+      return null;
   }
 
   /**
    * Add two number together
-   * @param num1 first number
-   * @param num2 second number
+   * @param baseValue first number
+   * @param valueToAdd second number
    * @return the sum of the two numbers
    */
-  public double add(double num1, double num2){
-      return -1;
+  public Double add(Double baseValue, Double valueToAdd){
+      return null;
   }
 
   /**
@@ -24,8 +27,8 @@ public class MathUtilities{
    * @param number the number given
    * @return the half of the number in double
    */
-  public double half(int number) {
-      return -1;
+  public Double half(Integer number) {
+      return null;
   }
 
   /**
@@ -33,8 +36,8 @@ public class MathUtilities{
    * @param number the number given
    * @return true if the number is odd, false if it is even
    */
-  public boolean isOdd(int number){
-      return false;
+  public Boolean isOdd(Integer number){
+      return null;
   }
 
 
@@ -43,8 +46,8 @@ public class MathUtilities{
    * @param number the number given
    * @return the result of the number multiply by itself
    */
-  public int square(int number) {
-      return -1;
+  public Integer square(Integer number) {
+      return null;
   }
 
 }
