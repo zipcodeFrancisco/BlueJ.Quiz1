@@ -28,6 +28,8 @@ Make all the tests in the `StringUtilitiesTest` class pass. All the methods have
   - `Character getMiddleCharacter(String word)`
   - `String removeCharacter(String value, char charToRemove)`
   - `String getLastWord(String value)`
+  - `String concatenate(String baseValue, String valueToBeAdded)`
+  - `String reverse(String valueToBeReversed)`
 
 ## Section 3 - LoopFun
 Make all the tests in the `LoopFunTest` class pass. All the methods have been stubbed
