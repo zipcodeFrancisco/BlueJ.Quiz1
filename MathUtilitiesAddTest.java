@@ -5,7 +5,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MathUtilsAddTest
+public class MathUtilitiesAddTest
 {
     private MathUtilities utilities;
     private static final double DELTA = 0.009;

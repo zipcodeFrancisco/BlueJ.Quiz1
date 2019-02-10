@@ -5,9 +5,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MathUtilsHalfTest {
+public class MathUtilitiesHalfTest {
     private MathUtilities utilities;
-    private static final double DELTA = 0.009;
+    private static final double DELTA = 0.009; // allows a margin of error
 
     @Before
     public void setup(){

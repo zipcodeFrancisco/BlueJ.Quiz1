@@ -5,8 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class MathUtilsFactorialTest {
-
+public class MathUtilitiesFactorialTest {
     private LoopFun loop;
 
     @Before
