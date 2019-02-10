@@ -55,8 +55,8 @@ public class StringUtilsGetLastWordTest {
     @Test
     public void test4() {
         // Given
-        String sentence = "quantum information convseration";
-        String expected = "convseration";
+        String sentence = "quantum information conservation";
+        String expected = "conservation";
 
         // When
         String actual = utilities.getLastWord(sentence);
