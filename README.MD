@@ -1,7 +1,7 @@
 # Quiz 1
-You have two hours to complete this quiz. Make sure your code compile when you submit the PR!
+<img src="">
 
-### **Git Instructions**
+## **Git Instructions**
 
 1. Fork this Repository
     * [fork](https://help.github.com/articles/fork-a-repo/) this repository to your personal github account
@@ -15,7 +15,7 @@ You have two hours to complete this quiz. Make sure your code compile when you s
     * submit a `pull request` which compares Zipcoder `master` to your `master`
 
 
-### **Project Instructions**
+## **Project Instructions**
 * In this project there are 3 Classes to be completed
   * `MathUtilities`
   * `StringUtilities`
@@ -27,32 +27,34 @@ You have two hours to complete this quiz. Make sure your code compile when you s
   * `MathUtilities.half` can be tested by running the `MathUtilitiesHalfTest` class.
   * `StringUtilities.reverse` can be tested by running the `StringUtilsReverseTest` class.
 
-## Section 1 - MathUtilities
-* Ensure all tests in the `MathUtilitiesTest` class pass.
+### Section 1 - MathUtilities
+* Ensure all test cases in the classes prefixed with `MathUtilities` pass.
+  * e.g. - `MathUtilitiesAddTest`, `MathUtilitiesHalfTest`
 * All the methods have been stubbed out for you in the `MathUtilities` class.
-* Each of the method has a comment above it to describe the expected behavior.
-* Look at the test case to see example of input and expected output.
+* Each of the methods have a comment above it to describe the expected behavior.
+* View the test cases to see examples of input and expected outputs.
   - `int add(int num1, int num2)`
   - `double add(double num1, double num2)`
   - `double half(int number)`
   - `boolean isOdd(int number)`
   - `int square(int number)`
 
-## Section 2 - StringUtilities
-Make all the tests in the `StringUtilitiesTest` class pass. All the methods have been stubbed out for you in the `StringUtilities` class. Each of the method has a comment above it to describe the expected behavior. Look at the test case to see example of input and expected output.
-
+### Section 2 - StringUtilities
+* Ensure all test cases in the classes prefixed with `StringUtils` pass.
+* All the methods have been stubbed out for you in the `StringUtilities` class.
+* Each of the methods have a comment above it to describe the expected behavior.
+* View the test cases to see examples of input and expected outputs.
   - `Character getMiddleCharacter(String word)`
   - `String removeCharacter(String value, char charToRemove)`
   - `String getLastWord(String value)`
   - `String concatenate(String baseValue, String valueToBeAdded)`
   - `String reverse(String valueToBeReversed)`
 
-## Section 3 - LoopFun
-Make all the tests in the `LoopFunTest` class pass. All the methods have been stubbed
-out for you in the `LoopFun` class.
-Each of the method has a comment above it to describe the expected behavior.
-Look at the test case to see example of input and expected output.
-
+### Section 3 - LoopFun
+* Ensure all test cases in the classes prefixed with `LoopFun` pass.
+* All the methods have been stubbed out for you in the `LoopFun` class.
+* Each of the methods have a comment above it to describe the expected behavior.
+* View the test cases to see examples of input and expected outputs.
   - `int factorial(int number)`
   - `String acronym(String phrase)`
   - `String encrypt(String word)`
