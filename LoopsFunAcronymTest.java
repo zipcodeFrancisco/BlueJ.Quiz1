@@ -1,4 +1,3 @@
- 
 
 import org.junit.Before;
 import org.junit.Test;
@@ -13,9 +12,8 @@ public class LoopsFunAcronymTest {
         loop = new LoopFun();
     }
 
-
     @Test
-    public void testAcronymBasic() {
+    public void test1() {
         //Given
         String phrase = "Portable Network Graphics";
         String expected = "PNG";
@@ -28,10 +26,10 @@ public class LoopsFunAcronymTest {
     }
 
     @Test
-    public void testAcronymBasicLowercaseWords() {
+    public void test2() {
         //Given
         String phrase = "Ruby on Rails";
-        String expected = "ROR";
+        String expected = "ROR"; // YES
 
         //When
         String actual = loop.acronym(phrase);
@@ -41,7 +39,7 @@ public class LoopsFunAcronymTest {
     }
 
     @Test
-    public void testAcronymBasicPunctuation() {
+    public void test3() {
         //Given
         String phrase = "First In, First Out";
         String expected = "FIFO";
@@ -50,6 +48,67 @@ public class LoopsFunAcronymTest {
         String actual = loop.acronym(phrase);
 
         //Then
+        assertEquals(expected, actual);
+    }
+
+    public void test4() {
+        // given
+        String phrase = "Tactical Reconnaissance Nuclear Powered Aerospace Platform";
+        String expected = "TRNPAP";
+
+        // when
+        String actual = loop.acronym(phrase);
+
+        // then
+        assertEquals(expected, actual);
+    }
+
+    public void test6() {
+        // given
+        String phrase = "Center Disease Control Whistle Blower";
+        String expected = "CDCWB";
+
+        // when
+        String actual = loop.acronym(phrase);
+
+        // then
+        assertEquals(expected, actual);
+    }
+
+    public void test7() {
+        // given
+        String phrase = "Tuskegee Macon County, Alabama";
+        String expected = "TMCA";
+
+        // when
+        String actual = loop.acronym(phrase);
+
+        // then
+        assertEquals(expected, actual);
+    }
+
+    public void test8() {
+        // given
+        String phrase = "Who is John Charles Cutler?";
+        String expected = "WIJCC";
+
+        // when
+        String actual = loop.acronym(phrase);
+
+        // then
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void test9() {
+        // Given
+        String sentence = "digital immunity infrastructure";
+        String expected = "DII";
+
+        // When
+        String actual = loop.acronym(sentence);
+
+        // Then
         assertEquals(expected, actual);
     }
 }

@@ -15,12 +15,25 @@ public class StringUtilsRemoveCharacterTest {
     }
 
 
+    @Test
+    public void test0(){
+        // Given
+        String word = "pseudometaphine";
+        String expected = "pseudometapine";
+        char charToRemove = 'h';
+
+        //When
+        String actual = utilities.removeCharacter(word, charToRemove);
+
+        //Then
+        assertEquals(expected, actual);
+    }
 
     @Test
     public void test1(){
         // Given
-        String word = "tryptamine";
-        String expected = "rypamine";
+        String word = "tryptophan";
+        String expected = "rypophan";
         char charToRemove = 't';
 
         //When
@@ -33,20 +46,6 @@ public class StringUtilsRemoveCharacterTest {
     @Test
     public void test2(){
         // Given
-        String word = "diethyl";
-        String expected = "diethl";
-        char charToRemove = 'y';
-
-        //When
-        String actual = utilities.removeCharacter(word, charToRemove);
-
-        //Then
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void test3(){
-        // Given
         String word = "hydroxytryptamine";
         String expected = "hydroytryptamine";
         char charToRemove = 'x';
@@ -57,4 +56,37 @@ public class StringUtilsRemoveCharacterTest {
         //Then
         assertEquals(expected, actual);
     }
+    
+    
+    @Test
+    public void test3(){
+        // Given
+        String word = "diethyl";
+        String expected = "diethl";
+        char charToRemove = 'y';
+
+        //When
+        String actual = utilities.removeCharacter(word, charToRemove);
+
+        //Then
+        assertEquals(expected, actual);
+    }
+    
+    
+    @Test
+    public void test4(){
+        // Given
+        String word = "methyl";
+        String expected = "ethyl";
+        char charToRemove = 'm';
+
+        //When
+        String actual = utilities.removeCharacter(word, charToRemove);
+
+        //Then
+        assertEquals(expected, actual);
+    }
+    
+    
+    
 }

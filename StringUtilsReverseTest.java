@@ -1,4 +1,3 @@
- 
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -13,6 +12,18 @@ public class StringUtilsReverseTest {
         utilities = new StringUtilities();
     }
 
+    @Test
+    public void test0() {
+        // Given
+        String input = "Smartdust";
+        String expected = "tsudtramS";
+
+        // when
+        String actual = utilities.reverse(input);
+
+        // then
+        Assert.assertEquals(expected, actual); 
+    }
 
     @Test
     public void test1() {
@@ -26,7 +37,6 @@ public class StringUtilsReverseTest {
         // then
         Assert.assertEquals(expected, actual);
     }
-
 
 
     @Test
@@ -56,7 +66,6 @@ public class StringUtilsReverseTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     @Test
     public void test4() {
         // Given
@@ -70,12 +79,11 @@ public class StringUtilsReverseTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     @Test
-    public void test5() {
+    public void test9() {
         // Given
-        String input = "Demiurge";
-        String expected = input;
+        String input = "Kundalini";
+        String expected = "Kundalini";
 
         // when
         String actual = utilities.reverse(utilities.reverse(input));
@@ -83,13 +91,13 @@ public class StringUtilsReverseTest {
         // then
         Assert.assertEquals(expected, actual);
     }
-
-
+    
+    
     @Test
-    public void test6() {
+    public void test10() {
         // Given
-        String input = "Kundalini";
-        String expected = "Kundalini";
+        String input = "Demiurge";
+        String expected = input;
 
         // when
         String actual = utilities.reverse(utilities.reverse(input));

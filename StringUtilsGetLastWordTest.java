@@ -1,4 +1,3 @@
- 
 
 import static org.junit.Assert.*;
 import org.junit.After;
@@ -14,7 +13,6 @@ public class StringUtilsGetLastWordTest {
         utilities = new StringUtilities();
     }
 
-
     @Test
     public void test1(){
         // Given
@@ -27,8 +25,6 @@ public class StringUtilsGetLastWordTest {
         // Then
         assertEquals(expected, actual);
     }
-
-
 
     @Test
     public void test2(){
@@ -56,9 +52,21 @@ public class StringUtilsGetLastWordTest {
         assertEquals(expected, actual);
     }
 
-
     @Test
     public void test4() {
+        // Given
+        String sentence = "quantum information convseration";
+        String expected = "convseration";
+
+        // When
+        String actual = utilities.getLastWord(sentence);
+
+        // Then
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void test5() {
         // Given
         String sentence = "The universe yields geometries so elegant, they animate with intelligence.";
         String expected = "intelligence.";

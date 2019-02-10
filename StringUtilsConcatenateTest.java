@@ -7,7 +7,7 @@ import org.junit.Test;
 public class StringUtilsConcatenateTest {
     private StringUtilities stringUtils;
 
-    @Before
+    @Before 
     public void setup() {
         this.stringUtils = new StringUtilities();
     }
