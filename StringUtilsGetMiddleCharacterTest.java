@@ -43,8 +43,8 @@ public class StringUtilsGetMiddleCharacterTest {
     @Test
     public void test3(){
         //Given
-        String word = "Krishna";
-        char expected = 's';
+        String word = "reification";
+        char expected = 'c';
 
         //When
         char actual = utilities.getMiddleCharacter(word);
@@ -57,7 +57,7 @@ public class StringUtilsGetMiddleCharacterTest {
     @Test
     public void test4(){
         //Given
-        String word = "Vishnu";
+        String word = "ohm";
         char expected = 'h';
 
         //When
