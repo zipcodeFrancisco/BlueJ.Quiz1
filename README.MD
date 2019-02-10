@@ -30,7 +30,7 @@
 ### Section 1 - MathUtilities
 * Ensure all test cases in the classes prefixed with `MathUtilities` pass.
   * e.g. - `MathUtilitiesAddTest`, `MathUtilitiesHalfTest`
-* All the methods have been stubbed out for you in the `MathUtilities` class.
+* All the methods have been [stubbed](https://en.wikipedia.org/wiki/Method_stub) out for you in the `MathUtilities` class.
 * Each of the methods have a comment above it to describe the expected behavior.
 * View the test cases to see examples of input and expected outputs.
   - `int add(int num1, int num2)`
