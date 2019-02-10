@@ -69,8 +69,8 @@ public class StringUtilsReverseTest {
     @Test
     public void test4() {
         // Given
-        String input = "Tantra";
-        String expected = "artnaT";
+        String input = "Negentropy";
+        String expected = "yportnegeN";
 
         // when
         String actual = utilities.reverse(input);
@@ -80,10 +80,10 @@ public class StringUtilsReverseTest {
     }
 
     @Test
-    public void test9() {
+    public void testReverseOfReverse1() {
         // Given
         String input = "Kundalini";
-        String expected = "Kundalini";
+        String expected = input;
 
         // when
         String actual = utilities.reverse(utilities.reverse(input));
@@ -94,7 +94,7 @@ public class StringUtilsReverseTest {
     
     
     @Test
-    public void test10() {
+    public void testReverseOfReverse2() {
         // Given
         String input = "Demiurge";
         String expected = input;

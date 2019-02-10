@@ -1,4 +1,3 @@
- 
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -53,9 +52,22 @@ public class StringUtilsConcatenateTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     @Test
     public void test3() {
+        // given
+        String expected = "StellatedOctahedron";
+        String baseValue = "Stellated";
+        String valueToBeAdded = "Octahedron";
+
+        // when
+        String actual = stringUtils.concatenate(baseValue, valueToBeAdded);
+
+        // then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void test4() {
         // given
         String expected = "DracosConstellation";
         String baseValue = "Dracos";
@@ -68,14 +80,12 @@ public class StringUtilsConcatenateTest {
         Assert.assertEquals(expected, actual);
     }
 
-
-
     @Test
-    public void test4() {
+    public void test5() {
         // given
-        String expected = "StellatedOctahedron";
-        String baseValue = "Stellated";
-        String valueToBeAdded = "Octahedron";
+        String expected = "DanWinter";
+        String baseValue = "Dan";
+        String valueToBeAdded = "Winter";
 
         // when
         String actual = stringUtils.concatenate(baseValue, valueToBeAdded);
@@ -83,4 +93,19 @@ public class StringUtilsConcatenateTest {
         // then
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void test6() {
+        // given
+        String expected = "ZetaReticuli";
+        String baseValue = "Zeta";
+        String valueToBeAdded = "Reticuli";
+
+        // when
+        String actual = stringUtils.concatenate(baseValue, valueToBeAdded);
+
+        // then
+        Assert.assertEquals(expected, actual);
+    }
+
 }

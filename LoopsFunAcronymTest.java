@@ -51,18 +51,6 @@ public class LoopsFunAcronymTest {
         assertEquals(expected, actual);
     }
 
-    public void test4() {
-        // given
-        String phrase = "Tactical Reconnaissance Nuclear Powered Aerospace Platform";
-        String expected = "TRNPAP";
-
-        // when
-        String actual = loop.acronym(phrase);
-
-        // then
-        assertEquals(expected, actual);
-    }
-
     public void test6() {
         // given
         String phrase = "Center Disease Control Whistle Blower";
@@ -109,6 +97,18 @@ public class LoopsFunAcronymTest {
         String actual = loop.acronym(sentence);
 
         // Then
+        assertEquals(expected, actual);
+    }
+
+    public void test4() {
+        // given
+        String phrase = "Tactical Reconnaissance Nuclear Powered Aerospace Platform";
+        String expected = "TRNPAP";
+
+        // when
+        String actual = loop.acronym(phrase);
+
+        // then
         assertEquals(expected, actual);
     }
 }

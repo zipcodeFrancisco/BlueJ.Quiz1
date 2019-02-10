@@ -30,8 +30,8 @@ public class StringUtilsGetMiddleCharacterTest {
     @Test
     public void test2(){
         //Given
-        String word = "disinformations";
-        char expected = 'r';
+        String word = "information";
+        char expected = 'm';
 
         //When
         char actual = utilities.getMiddleCharacter(word);
