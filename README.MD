@@ -1,5 +1,5 @@
 # Quiz 1
-<img src="">
+<img src="https://github.com/Zipcoder/BlueJ.Quiz1/blob/master/quiz1screenshot.png">
 
 ## **Git Instructions**
 
