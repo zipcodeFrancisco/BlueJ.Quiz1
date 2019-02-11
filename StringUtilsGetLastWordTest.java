@@ -40,19 +40,6 @@ public class StringUtilsGetLastWordTest {
     }
 
     @Test
-    public void test3() {
-        // Given
-        String sentence = "Who is David Berlinski?";
-        String expected = "Berlinski?";
-
-        // When
-        String actual = utilities.getLastWord(sentence);
-
-        // Then
-        assertEquals(expected, actual);
-    }
-
-    @Test
     public void test4() {
         // Given
         String sentence = "quantum information conservation";

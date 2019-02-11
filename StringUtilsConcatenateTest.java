@@ -83,9 +83,9 @@ public class StringUtilsConcatenateTest {
     @Test
     public void test5() {
         // given
-        String expected = "DanWinter";
-        String baseValue = "Dan";
-        String valueToBeAdded = "Winter";
+        String expected = "HeartHarmonics";
+        String baseValue = "Heart";
+        String valueToBeAdded = "Harmonics";
 
         // when
         String actual = stringUtils.concatenate(baseValue, valueToBeAdded);
