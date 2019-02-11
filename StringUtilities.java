@@ -1,11 +1,13 @@
 
+import java.util.*; 
+
 public class StringUtilities {
     /**
      * @param input value to be returned
      * @return `input`
      */
     public String returnInput(String input) {
-        return null;
+        return input;
     }
 
     /**
@@ -14,7 +16,7 @@ public class StringUtilities {
      * @return the concatenation of `baseValue` and `valueToBeAdded`
      */
     public String concatenate(String baseValue, String valueToBeAdded) {
-        return null;
+        return baseValue + valueToBeAdded;
     }
 
     /**
@@ -22,7 +24,13 @@ public class StringUtilities {
      * @return identical string with characters in opposite order
      */
     public String reverse(String valueToBeReversed) {
-        return null;
+        //System.out.print('\u000C');
+        String result = "";
+        int lengthStr = valueToBeReversed.length();
+        for(int i = 0; i < lengthStr; i++){
+            result += valueToBeReversed.substring(lengthStr-(i+1), lengthStr-i);
+        }
+        return result;
     }
 
     /**
@@ -30,7 +38,9 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-        return null;
+        Integer result = word.length() / 2;
+        String res = word.substring(result, result + 1);
+        return res.charAt(0);
     }
 
     /**
@@ -39,7 +49,7 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
+        return value.replaceAll(charToRemove.toString() , "");
     }
 
     /**
@@ -47,6 +57,11 @@ public class StringUtilities {
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+        //System.out.print('\u000C');
+        //System.out.println(sentence);
+        String[] arrayStr = sentence.split(" ");
+        //System.out.println( arrayStr[arrayStr.length-1] );
+        String result = arrayStr[arrayStr.length-1];
+        return result;
     }
 }
