@@ -77,8 +77,8 @@ public class LoopsFunAcronymTest {
 
     public void test8() {
         // given
-        String phrase = "Who is John Charles Cutler?";
-        String expected = "WIJCC";
+        String phrase = "John Charles Cutler";
+        String expected = "JCC";
 
         // when
         String actual = loop.acronym(phrase);
