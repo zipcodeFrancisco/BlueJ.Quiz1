@@ -1,4 +1,3 @@
- 
 
 import org.junit.Before;
 import org.junit.Test;
@@ -14,13 +13,12 @@ public class StringUtilsRemoveCharacterTest {
         utilities = new StringUtilities();
     }
 
-
     @Test
     public void test0(){
         // Given
-        String word = "pseudometaphine";
-        String expected = "pseudometapine";
-        char charToRemove = 'h';
+        String word = "melatonin";
+        String expected = "melatnin";
+        char charToRemove = 'o';
 
         //When
         String actual = utilities.removeCharacter(word, charToRemove);
@@ -56,8 +54,7 @@ public class StringUtilsRemoveCharacterTest {
         //Then
         assertEquals(expected, actual);
     }
-    
-    
+
     @Test
     public void test3(){
         // Given
@@ -71,8 +68,7 @@ public class StringUtilsRemoveCharacterTest {
         //Then
         assertEquals(expected, actual);
     }
-    
-    
+
     @Test
     public void test4(){
         // Given
@@ -86,7 +82,6 @@ public class StringUtilsRemoveCharacterTest {
         //Then
         assertEquals(expected, actual);
     }
-    
-    
+
     
 }
